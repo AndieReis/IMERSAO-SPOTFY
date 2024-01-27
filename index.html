@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
     <title>Imersão Spotfy</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -16,38 +18,37 @@
 </head>
 
 <body>
+
     <div class="sidebar">
         <nav class="sidebar__navigation">
             <div class="logo">
-                <a href="#"><img src="./assets/icons/logo-spotify.png" alt="Logo Spotfy"></a>
+                <a href="#">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo Spotfy">
+                </a>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href=""></a>
+            <ul>
+                <li>
+                    <a href="">
                         <i class="fa fa-home"></i>
                         <span>Inicio</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href=""></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
                         <i class="fa fa-search"></i>
                         <span>Buscar</span>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+            </ul>
         </nav>
         <div class="library">
-            <section class="library__content">
+            <div class="library__content">
                 <button class="library__button">
                     <i class="fa fa-book"></i>
                     <span>Sua Biblioteca</span>
                 </button>
                 <i class="fa fa-plus"></i>
-            </section>
+            </div>
 
             <section class="playlist">
                 <div class="playlist__content">
@@ -58,9 +59,11 @@
                     </button>
                 </div>
             </section>
+
             <div class="cookies">
                 <a href="#">Cookies</a>
             </div>
+
             <div class="languages">
                 <button class="languages__button">
                     <span class="fa fa-globe"></span>
@@ -69,6 +72,32 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="">
+                    </button>
+
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt="">
+                        <input type="text" id="search-input" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
 
     <footer>
         <div class="footer__content">
@@ -80,8 +109,8 @@
                 </p>
             </div>
 
-            <button>
-                <span>Inscreva-se grátis</span>
+            <button type="button" class="footer__button">
+                Inscreva-se grátis
             </button>
 
         </div>

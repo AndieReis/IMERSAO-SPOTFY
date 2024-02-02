@@ -1,9 +1,14 @@
 :root {
     /*FONT*/
     --font-dm-sans: "DM Sans", sans-serif;
-    
+
     /*COLORS*/
     --bg-icon: #131313;
     --bg-arrow-color: rgba(0, 0, 07);
+    --bg-navigation: #121212;
     --search-bg-color: #242424;
+    --black: #000;
+    --white: #fff;
+    --bg-subscribe: #a7a7a7;
+
 }

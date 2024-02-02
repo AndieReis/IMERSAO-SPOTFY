@@ -2,16 +2,18 @@ body {
     background-color: #000;
     box-sizing: border-box;
     font-family: var(--font-dm-sans);
+    width: 100vw;
 }
 
 .sidebar {
     bottom: 0;
     color: #b3b3b3;
     left: 0;
-    padding: 12px;
+    padding: 0.75rem;
     position: fixed;
     top: 0;
-    width: 300px;
+    width: 18.75rem;
+    height: 100vh;
 
 }
 
@@ -19,55 +21,60 @@ body {
     background: #121212;
     border-radius: 8px;
     display: flex;
-    padding: 12px 0 0 12px;
+    padding: 1rem 0 0 1rem;
 }
 
 .sidebar__navigation .logo img {
-    width: 80px;
+    width: 5rem;
 }
 
 .sidebar__navigation {
     background-color: #121212;
     border-radius: 8px;
-    padding: 12px 0 0 12px;
+    padding: 0.75rem 0 0 0.75rem;
 
 }
 
 
 .sidebar nav ul {
     margin-top: 12px;
-    padding: 0 20px 10px 20px;
+    padding: 0 1.25rem 0.625rem 1.25rem;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 0.925rem;
 
 }
 
 .sidebar ul li span:hover {
+    color: var(--white);
     text-decoration: underline;
 
 }
 
 .sidebar .fa-home {
-    margin-right: 12px;
-    font-size: 20px;
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
 }
 
 .sidebar .fa-search {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin-right: 12px;
+    margin-right: 0.75rem;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .library {
@@ -76,11 +83,11 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     color: #b3b3b3;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 
 }
 
@@ -91,90 +98,96 @@ body {
 
 .library .library__button {
     display: flex;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     color: #b3b3b3;
     background-color: transparent;
     border: none;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
     text-decoration: none;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
 }
 
 .library .library__button .fa {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
     font-weight: 300;
-    padding-right: 8px;
+    padding-right: 0.5rem;
     cursor: pointer;
 }
 
 .library .library__content .fa-plus {
-    margin: 24px 10px;
+    margin: 1.5rem 0.625rem;
     cursor: pointer;
 }
 
-.playlist {
+.library__content-playlist {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
     background-color: #242424;
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
-    margin: 8px 0px;
-    min-block-size: 40px;
-    padding: 16px 20px;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    min-block-size: 2.5rem;
+    padding: 1.5rem 1.25rem;
     border-radius: 10px;
 }
 
-.library .playlist__content {
+.library__content-playlist-content {
     display: flex;
     flex-direction: column;
 }
 
-.library .playlist__content .text {
-    padding-bottom: 14px;
+.library__content-playlist-content .text {
+    padding-bottom: 0.875rem;
     color: #fff;
 }
 
-.library .playlist__content .title {
+.library__content-playlist-content .title {
     font-weight: 700;
 }
 
-.library .playlist__content .subtitle {
+.library__content-playlist-content .subtitle {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.8rem;
 
 }
 
-.library .playlist-button {
+.library__content-playlist-button {
     display: flex;
     justify-content: center;
     background-color: #fff;
     color: #000;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
-    margin-top: 12px;
+    margin-top: 0.75rem;
     text-decoration: none;
     text-transform: none;
-    padding: 10px;
+    padding: 0.625rem;
     border: 0px;
-    margin: 10px;
-    width: 113px;
+    margin: 0.625rem;
+    width: 7.0625rem;
+}
+
+.library__content-playlist-button:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+
 }
 
 .sidebar .cookies {
-    margin: 25px 20px;
+    margin: 1.75rem 1.25rem;
 }
 
 .sidebar .cookies a {
     color: #b3b3b3;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 0.625rem;
     text-decoration: none;
 
 }
@@ -191,9 +204,9 @@ body {
     cursor: pointer;
     align-items: center;
     font-weight: bold;
-    width: 170px;
-    margin: 8px;
-    padding: 8px;
+    width: 10.625rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 .languages .languages__button:hover {
@@ -209,7 +222,7 @@ footer .footer__content {
     right: 0;
     margin: 0.30rem;
     background-image: linear-gradient(90deg, #af2896, #509bf5);
-    padding: 15px 40px;
+    padding: 0.9375rem 1.875rem 0.9375rem;
     display: flex;
     justify-content: space-between;
 }
@@ -219,29 +232,29 @@ footer .footer__content {
 }
 
 .footer__content p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
 
 }
 
 .footer__content .footer__title {
     font-weight: 600;
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
 
 }
 
 .footer__content .footer__button {
     background-color: #fff;
     border: 1px solid #878787;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     color: #000;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     line-height: normal;
-    margin-right: 8px;
-    padding: 14px 20px 10px;
+    margin-right: 0.5rem;
+    padding: 0.875rem 1.25rem 0.625rem;
     flex-shrink: 0;
 
 }

@@ -1,9 +1,6 @@
 # Imersão Front-end Alura 2024 🚀🚀
 
 
-[spotfy](https://github.com/AndieReis/IMERSAO-SPOTFY/assets/122743869/704b034e-2739-4549-a218-7e55270063f6)
-
-
 ----------------------------
 ## Sobre a Imersão!
 
@@ -35,8 +32,8 @@ Links úteis:
 Veja o projeto rodando aqui:
 [Imersão Spotfy](https://imersao-spotfy.vercel.app/)
 
-
-![Gif demonstrando a página web do Brechó sol](https://github.com/AndieReis/Brecho_Sol/blob/main/assets/img/brecho%20sol.gif)
+[
+![Gif demonstrando a página web da Imersão Spotfy](https://github.com/AndieReis/IMERSAO-SPOTFY/blob/main/src/assets/img/video_spotfy.gif)]
 
 
 

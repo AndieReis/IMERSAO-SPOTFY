@@ -33,7 +33,12 @@ São cinco aulas para desenvolver habilidades avançadas em HTML e CSS, conhecer
 Links úteis:
 
 Veja o projeto rodando aqui:
-https://toktof---jornada.web.app/
+[Imersão Spotfy](https://imersao-spotfy.vercel.app/)
+
+
+![Gif demonstrando a página web do Brechó sol](https://github.com/AndieReis/Brecho_Sol/blob/main/assets/img/brecho%20sol.gif)
+
+
 
 ##
 Contatos:
@@ -43,4 +48,4 @@ Contatos:
 
 ##
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andiereis)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andiereis)
